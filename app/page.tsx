@@ -1,25 +1,20 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <main className="bg-gray-300 h-screen flex items-center justify-center p-5">
-      <div className="bg-white w-full shadow-md p-5 rounded-xl">
-        <div className="flex justify-between items-center">
-          <div className="flex flex-col">
-            <span className="text-gray-500 -mb-2 font-semibold">
-              In transit
-            </span>
-            <span className="text-4xl font-semibold">
-              Coolblue
-            </span>
-          </div>
-          <div className="w-12 h-12 bg-orange-500 rounded-full text-center">
-            circle
-          </div>
-        </div>
+    <div>
+      <div>
+        <span>🥕</span>
+        <h1>당근</h1>
+        <h2>당근 마켓에 어서오세요!</h2>
+      </div>
+      <div>
+        <Link href="/create-account">시작하기</Link>
         <div>
-          <span>Today</span>
-          <span>9:30-10:30</span>
+          <span>이미 계정이 있나요?</span>
+          <Link href="/login">로그인</Link>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
